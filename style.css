@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFE5E5;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    height: 10vh;
+    background-color: #FFCCCC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+    border: 2px solid black;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 80%;
+}
+.logo img:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+
+}
+.nav-list{
+    margin-right: -240px;
+}
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav-list ul li {
+    padding: 25px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-list ul li:hover{
+    transform: scale(1.09);
+    /* text-shadow: 0 20px 20px 10px black; */
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: black;
+    /* font-weight: bolder; */
+    font-size: 22px;
+}
+.search-bar{
+    margin-right: 80px;
+    border: 2px solid black;
+    border-radius: 42px;
+    background-color: whitesmoke;
+}
+.search-bar input[type="text"]{
+    width: 20vw;
+    padding: 10px;
+    border-radius: 23px;
+    border: none;
+    background-color: whitesmoke;
+}
+.front-bg img{
+    width: 90vw;
+    height: 80vh;
+    margin: 0 5% 2% 5%;
+    filter: opacity(1);
+    background-blend-mode:screen ;
+    border-radius: 42px;
+}
+.front-bg .quote{
+    background-color: rgba(255, 255, 255, 0.952);
+  color: black;
+  /* border: 7px solid black; */
+  border-radius: 42px;
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 3px;
+  width: 35%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 25%; /* Position text in the middle */
+  left: 25%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+.front-bg #element{
+    position: absolute;
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(90, 75, 75);
+    top: 35%;
+    left: 10%;
+    max-width: 50%;
+}
+.story-section{
+    background-image: url(./new-story-back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 85vh;
+    min-width:fit-content;
+    margin-bottom: 3%;
+}
+.story-section .container1{
+    background-color: #FFCCCC;
+    width: 25vw;
+    min-height: 75vh;
+    text-align: center;
+    align-items: center;
+    border-radius: 42px;
+    border: 2px solid black;
+    box-shadow: 0 4px 4px 0.5px black;
+    margin-top: 1%;
+}
+#short{
+    background-color: #EDB7ED;
+    color: #713ABE;
+}
+#shorter{
+    background-color: #8ECDDD;
+    color: #713ABE;
+}
+#shortest{
+    background-color: #B9B4C7;
+    color: #713ABE;
+}
+#count1{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-align: left;
+    margin: -5% 10% 5% 10%;
+}
+#count2{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-align: left;
+    margin: -5% 10% 5% 10%;
+}
+#count3{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-align: left;
+    margin: -5% 10% 5% 10%;
+}
+.container1 .title{
+    text-align: left;
+    margin: 3% 10%;
+    /* background-color: #94A684; */
+    padding:3% 1%;
+    /* width: 40%; */
+    font-size: 2.9rem;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+}
+.container1 .title:hover{
+    transform: scale(1.04);
+}
+.container1 .card{
+    background-color: whitesmoke;
+    min-height: 50vh;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+    border-radius: 42px;
+}
+.inner-container{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+.inner-container::-webkit-scrollbar {
+    display: none;
+}
+.card i{
+    position: relative;
+    margin-top: 5%;
+    left: 30%;
+    scale: 2.5;
+    opacity: .4;
+    color: black;
+}
+.title .image{
+    margin-left: 5%;
+}
+.card .para{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 5%;
+}
+.card .story{
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 5%;
+    max-height: 34vh;
+    overflow-y: scroll;
+}
+.story::-webkit-scrollbar {
+    display: none;
+}
+.contact-us{
+    background-image: url(./Premium\ Vector\ _\ Desert\ texas\ landscape.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+    height: 70vh;
+    margin-left: 9%;
+    border-radius: 42px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-us .leftimg{
+    background-image: url(./contact-img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 42px;
+}
+.contact-us .leftimg img{
+    width: 18vw;
+    position: relative;
+    top: 13rem;
+}
+.contact-us .right-form{
+    background-color: whitesmoke;
+    filter: opacity(0.8);
+    border-radius: 42px;
+    width: 40vw;
+    height: 60vh;
+}
+.contact-us .right-form form{
+    margin: 5% 6%;
+}
+form{
+    height: 50vh;
+}
+form p{
+    font-size: 2.6rem;
+}
+form input[type=text], select, textarea {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.1rem;
+    width: 77%; /* Full width */
+    color: black;
+    padding: 15px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 8px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 3%; /* Add a top margin */
+    margin-left: 9%;
+    margin-bottom: 7px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+form input[type=submit] {
+  background-color: #fc7a1d;
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Signika Negative', sans-serif;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-top: 1%;
+  transition: all 0.5s ease-out;
+}
+form #message{
+    padding-bottom: 55px;
+}
+form input[type=submit]:hover{
+    background-color: #e76800;
+    transform: scale(1.05);
+}
+footer{
+    background-color: #00C4FF;
+    width: 100%;
+    height: 50vh;
+    margin-top: 3%;
+    border-radius: 45px 45px 0 0;
+}
+.footer{
+    display: flex;
+    gap:50px;
+    justify-content: space-around;
+    padding: 32px 120px;
+}
+footer .text-rights{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.footer ul{
+    list-style: none;
+}
+.footer-first ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.footer-second li{
+    color: rgb(0, 0, 0);
+    padding: 5px 6px;
+}
+.footer-third li{
+    color: rgb(0, 0, 0);
+    padding: 2px 6px;
+    width: 50vw;
+    text-align: justify;
+    margin-top: 2%;
+}
